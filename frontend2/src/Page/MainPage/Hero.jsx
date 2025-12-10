@@ -5,7 +5,10 @@ const Hero = () => {
   return (
     <div className="relative min-h-[110vh] bg-gradient-to-b from-gray-50 to-white pb-0">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-28 lg:py-36 flex justify-center">
+        {/*작은 화면에서는 flex-col이 적용되어 세로 정렬이 됨
+        큰 화면에서는 flex-row가 적용되어 가로 정렬이 됨*/}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-6xl mx-auto">
+          {/*flex 레이아웃의 첫번째 div 태그: 회사 타이틀 문구*/}
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold text-gray-900 leading-tight mb-6 lg:mb-12">
               인테리어 전문가와 함께
@@ -26,7 +29,9 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="flex-1 w-full max-w-2xl lg:max-w-none">
+          {/*flex 레이아웃의 두번째 div 태그: 회사 타이틀 이미지
+          부모 태그가 flex-1로 설정되어 있어 width는 꽉 채우지만 왼쪽으로 정렬됨. <img> 부모 div에 flex 가운데 정렬을 따로 걸어줘야 함*/}
+          <div className="flex-1 w-full max-w-2xl lg:max-w-none flex justify-center">
             <div className="relative">
               <img
                 src={HeroImage}
