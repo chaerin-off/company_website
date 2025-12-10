@@ -5,8 +5,9 @@ const Hero = () => {
   return (
     <div className="relative min-h-[110vh] bg-gradient-to-b from-gray-50 to-white pb-0">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-28 lg:py-36 flex justify-center">
-        {/*작은 화면에서는 flex-col이 적용되어 세로 정렬이 됨
-        큰 화면에서는 flex-row가 적용되어 가로 정렬이 됨*/}
+        {/* flex 레이아웃을 선언하면 자식 요소들을 세로/가로로 배치할 수 있음. ->
+        작은 화면에서는 flex-col이 적용되어 세로로 배치가 됨
+        큰 화면에서는 flex-row가 적용되어 가로로 배치가 됨*/}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-6xl mx-auto">
           {/*flex 레이아웃의 첫번째 div 태그: 회사 타이틀 문구*/}
           <div className="flex-1 text-center lg:text-left">
