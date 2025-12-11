@@ -66,7 +66,7 @@ const Contact = () => {
         <div className="mt-12 text-center">
           <Link
             to="/contact"
-            className="inline-block px-10 py-3 text-lg font-medium text-white bg-blue-600 rounded-lg shadow hover:bg-blue-700 transition-all duration-300 ease-in-out hover:shadow-lg"
+            className="inline-block px-10 py-3 text-lg font-medium text-white bg-green-600 rounded-lg shadow hover:bg-green-700 transition-all duration-300 ease-in-out hover:shadow-lg"
           >
             문의하기
           </Link>
