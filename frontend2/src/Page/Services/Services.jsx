@@ -1,6 +1,7 @@
 import React from "react";
 
 const Services = () => {
+  //더미 데이터
   const servicesList = [
     {
       id: 1,
